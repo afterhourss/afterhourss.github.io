@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>library</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Roboto+Mono:ital,wght@0,300;0,400;0,600;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="scss/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title-container">
+        <p class="title">Lib-rary.js</p>
+        <div class="title-side-box"></div>
+      </div>
+      <p class="sub-title">
+        a library that can list the books you have read and will read here.
+        project for <strong>javascript</strong> practice
+        <em>The Odin Project</em>
+      </p>
+      <button class="add-book-btn">add book +</button>
+      <table>
+        <h2 class="empty-lib-para">oops, where did book go</h2>
+        <tr class="table-head">
+          <td width="30%">Author</td>
+          <td width="30%">Title</td>
+          <td width="30%">Pages</td>
+          <td width="10%">Read</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="container-2 display-none">
+      <div class="overlay"></div>
+      <form action="" id="myForm">
+        <h2>Add New Book</h2>
+        <input
+          type="text"
+          class="book-title input-form"
+          placeholder="Title"
+          required
+        />
+        <input
+          type="text"
+          class="book-author input-form"
+          placeholder="Author"
+          required
+        />
+        <input
+          type="number"
+          class="book-pages input-form"
+          placeholder="Pages"
+          required
+        />
+        <div class="inline">
+          <label for="chckbox">im already read that</label>
+          <input type="checkbox" id="chckbox" class="book-read" />
+        </div>
+        <button type="submit" class="submit-btn">submit</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
